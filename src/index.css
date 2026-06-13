@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #030712; /* Fallback */
+  --color-navy-900: #0B0F19; /* Main background */
+  --color-navy-850: #111827;
+  --color-navy-800: #172033; /* Dark card background */
+  --color-navy-700: #1F2D47; /* Hover card border */
+  --color-gold-300: #F6E0A4;
+  --color-gold-400: #F3C64F; /* Subtle gold highlights */
+  --color-gold-500: #E6B32C; /* Active gold highlight */
+  --color-gold-600: #C4951B;
+  
+  --font-sans: 'Outfit', 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-navy-900 text-slate-300 font-sans antialiased selection:bg-purple-900/30 selection:text-gold-400 overflow-x-hidden;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.15), rgba(255, 255, 255, 0)),
+      radial-gradient(ellipse 50% 50% at 80% 70%, rgba(147, 51, 234, 0.04), rgba(255, 255, 255, 0));
+    background-attachment: fixed;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom glow animations and utilities */
+.glow-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(243, 198, 79, 0.1) 0%, rgba(147, 51, 234, 0.1) 50%, transparent 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.glow-card:hover::before {
+  background: linear-gradient(135deg, rgba(243, 198, 79, 0.3) 0%, rgba(147, 51, 234, 0.3) 50%, rgba(99, 102, 241, 0.2) 100%);
+}
+
+.glow-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 30px -15px rgba(3, 7, 18, 0.7),
+    0 0 20px -5px rgba(147, 51, 234, 0.15);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-navy-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-navy-800 rounded-md border border-navy-950 hover:bg-navy-700;
+}
