@@ -5,18 +5,18 @@ import { Briefcase, FlaskConical, Milestone, Users } from 'lucide-react';
 export const Proposal: React.FC = () => {
   const opportunities = [
     {
-      title: 'Technical Prototyping',
-      description: 'Quickly testing concepts by standing up clean, well-tested backend services or CLI tools before committing to full production buildout.',
+      title: 'Prototype Thinking',
+      description: 'Turn unclear ideas into small testable prototypes.',
       icon: <FlaskConical className="w-5 h-5 text-gold-400" />,
     },
     {
-      title: 'Observability Audits',
-      description: 'Assisting in setting up distributed tracing and Grafana dashboards for existing microservices to diagnose hard-to-reproduce pipeline errors.',
+      title: 'Backend & Reliability',
+      description: 'Design APIs, services, monitoring flows, and operational dashboards.',
       icon: <Milestone className="w-5 h-5 text-gold-400" />,
     },
     {
-      title: 'Developer Tooling & AI',
-      description: 'Collaborating on internal CLI programs, automated knowledge pipelines, or building agentic LLM integrations that streamline internal operations.',
+      title: 'AI-assisted Systems',
+      description: 'Explore practical AI workflows that reduce manual work and cognitive load.',
       icon: <Users className="w-5 h-5 text-gold-400" />,
     },
   ];
@@ -24,8 +24,8 @@ export const Proposal: React.FC = () => {
   return (
     <Section
       id="proposal"
-      title="The Collaboration Proposal"
-      subtitle="Izuna LAB is designed as an open research and proposal space. Here is how we can collaborate."
+      title="How I Want to Build"
+      subtitle="Building systems that combine engineering discipline with human context."
     >
       <div className="mt-8 max-w-4xl mx-auto rounded-2xl bg-navy-800/20 border border-slate-800/80 backdrop-blur-md p-8 md:p-12 relative overflow-hidden text-left">
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-purple-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />
@@ -33,12 +33,12 @@ export const Proposal: React.FC = () => {
         <div className="flex items-center gap-3 mb-6">
           <Briefcase className="w-6 h-6 text-purple-400" />
           <h3 className="text-xl md:text-2xl font-semibold text-white tracking-tight">
-            Research-Driven Software Development
+            Engineering + Human Context
           </h3>
         </div>
 
         <p className="text-slate-400 font-light leading-relaxed mb-8">
-          This site serves as a sandboxed platform for demonstrating what happens when clean design meets reliable system execution. Rather than building commercial, feature-bloated web apps, the goal of Izuna LAB is to explore focused prototypes, investigate infrastructure pipelines, and build tools that help solve real engineering bottlenecks.
+          I am interested in working on systems that combine engineering discipline with human context — tools that are reliable, understandable, and genuinely useful in daily life or business operations.
         </p>
 
         <h4 className="text-sm font-mono text-gold-400 tracking-wider uppercase mb-6">
@@ -59,8 +59,8 @@ export const Proposal: React.FC = () => {
 
         <div className="pt-6 border-t border-slate-900 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-6">
           <div>
-            <p className="text-white font-medium text-sm">Have a system design bottleneck or a custom tool idea?</p>
-            <p className="text-slate-500 text-xs font-light mt-1">Let's discuss how we can build a lightweight proof of concept.</p>
+            <p className="text-white font-medium text-sm">Have an idea, collaboration, or technical problem worth exploring?</p>
+            <p className="text-slate-500 text-xs font-light mt-1">Let's start a conversation and build something meaningful.</p>
           </div>
           <a
             href="#contact"

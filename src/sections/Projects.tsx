@@ -7,25 +7,25 @@ export const Projects: React.FC = () => {
   const projects = [
     {
       title: 'Izu Tarot',
-      description: 'A reflective tarot reading web application incorporating an AI "Ask Izu" counselor. Users draw cards and receive personalized, context-aware guidance powered by Gemini APIs.',
+      description: 'A reflective tarot web app with Ask Izu, designed as a gentle interface for self-reflection rather than prediction.',
       icon: <Sparkles className="w-6 h-6 text-purple-400" />,
       tags: ['React', 'TypeScript', 'Gemini API', 'Tailwind CSS'],
     },
     {
       title: 'IzuMind',
-      description: 'A video-to-knowledge pipeline that processes long-form lecture and instructional video materials, transcribes audio, extracts primary concepts, and structures them into searchable knowledge graphs.',
+      description: 'A video-to-knowledge pipeline that turns long-form content into structured notes, summaries, and reusable knowledge.',
       icon: <Video className="w-6 h-6 text-purple-400" />,
       tags: ['Python', 'OpenAI Whisper', 'Vector Database', 'Markdown'],
     },
     {
       title: 'Slip2Sheet',
-      description: 'A receipt OCR scanning pipeline that extracts transaction data from payment slips, formats the output into clean JSON, and syncs directly to a Google Sheets expense tracker.',
+      description: 'A personal finance experiment that extracts expense data from slip images and organizes it into Google Sheets.',
       icon: <FileText className="w-6 h-6 text-purple-400" />,
       tags: ['Golang', 'Tesseract OCR', 'Google Sheets API', 'CLI'],
     },
     {
       title: 'Batch Monitoring',
-      description: 'An observability stack configuring Grafana and OpenTelemetry tracing specifically tailored to monitor end-of-day batch jobs, tracking execution reliability, bottlenecks, and error rates.',
+      description: 'A reliability-focused monitoring concept for daily batch processing using observability, dashboards, and alerting.',
       icon: <BarChart3 className="w-6 h-6 text-purple-400" />,
       tags: ['OpenTelemetry', 'Grafana', 'Docker Compose', 'Alertmanager'],
     },

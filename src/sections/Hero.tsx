@@ -12,22 +12,27 @@ export const Hero: React.FC = () => {
         {/* Lab Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-mono text-purple-300 mb-8 tracking-wider uppercase animate-pulse">
           <Terminal className="w-3.5 h-3.5" />
-          <span>System Environment Active</span>
+          <span>Personal Proposal · 2026</span>
         </div>
 
         {/* Title */}
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-          IZUNA <span className="bg-gradient-to-r from-purple-400 via-pink-300 to-gold-400 bg-clip-text text-transparent">LAB</span>
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+          Phirapon <span className="bg-gradient-to-r from-purple-400 via-pink-300 to-gold-400 bg-clip-text text-transparent">Proposal</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-md md:text-lg font-mono text-gold-400 tracking-[0.2em] uppercase mb-6 font-medium">
-          Research. Build. Experiment. Learn.
+        <p className="text-md md:text-lg font-mono text-gold-400 tracking-[0.2em] uppercase mb-4 font-medium">
+          Software Engineer · System Thinker · Builder
         </p>
+
+        {/* Lab Mark */}
+        <div className="text-xs font-mono text-slate-500 uppercase tracking-widest mb-8">
+          An experimental personal lab by Phirapon
+        </div>
 
         {/* Description */}
         <p className="text-lg md:text-xl text-slate-400 font-light leading-relaxed max-w-2xl mb-12">
-          A personal lab for backend engineering, observability, AI-assisted tools, and thoughtful system design.
+          I build thoughtful software systems that reduce cognitive burden, improve clarity, and help people make meaningful progress — from backend services and observability dashboards to AI-assisted personal tools.
         </p>
 
         {/* Actions */}
@@ -44,7 +49,7 @@ export const Hero: React.FC = () => {
             href="#contact"
             className="px-8 py-3.5 rounded-lg text-sm font-semibold tracking-wider text-slate-300 hover:text-white bg-transparent border border-slate-800 hover:border-slate-600 hover:bg-slate-800/20 transition-all duration-300 flex items-center justify-center"
           >
-            Contact
+            Start a Conversation
           </a>
         </div>
 

@@ -37,32 +37,32 @@ export const Contact: React.FC = () => {
   const contactLinks = [
     {
       name: 'Email',
-      value: 'contact@izunalab.com',
-      href: 'mailto:contact@izunalab.com',
+      value: 'phirapon.m@outlook.com',
+      href: 'mailto:phirapon.m@outlook.com',
       icon: <Mail className="w-6 h-6 text-purple-400" />,
-      description: 'For inquiries regarding proposals, design reviews, or system reviews.',
+      description: 'Reach out directly for engineering inquiries, questions, or collaboration ideas.',
     },
     {
       name: 'GitHub',
-      value: 'github.com/izunalab',
-      href: 'https://github.com',
+      value: 'github.com/PhiraponT99',
+      href: 'https://github.com/PhiraponT99',
       icon: <GithubIcon className="w-6 h-6 text-purple-400" />,
-      description: 'Explore active source code, scripts, and configuration repositories.',
+      description: 'View source code repositories, open-source tools, and system experiments.',
     },
     {
       name: 'LinkedIn',
-      value: 'linkedin.com/in/izunalab',
-      href: 'https://linkedin.com',
+      value: 'linkedin.com/in/phirapon-m',
+      href: 'https://www.linkedin.com',
       icon: <LinkedinIcon className="w-6 h-6 text-purple-400" />,
-      description: 'Connect professionally and view history of past enterprise projects.',
+      description: 'Connect professionally, view my industry experience, and discuss tech.',
     },
   ];
 
   return (
     <Section
       id="contact"
-      title="Establish Connection"
-      subtitle="Ready to discuss an experiment, a prototype request, or a technical partnership? Reach out below."
+      title="Start a Conversation"
+      subtitle="Have an idea, collaboration, or technical problem worth exploring? Feel free to reach out."
     >
       <div className="max-w-5xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         {contactLinks.map((link) => (

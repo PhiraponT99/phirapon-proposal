@@ -6,40 +6,40 @@ import { Layers, Activity, Cloud, BrainCircuit, ShieldCheck, Compass } from 'luc
 export const Capabilities: React.FC = () => {
   const capabilities = [
     {
-      title: 'Backend API Design',
-      description: 'Designing typed endpoints (REST, gRPC, GraphQL) that are self-documenting, performant under concurrency, and simple for client developers to consume.',
+      title: 'Backend Engineering',
+      description: 'Designing and implementing clean, statically-typed JSON/gRPC APIs and distributed systems in Golang and Kotlin. I build services that are easy to maintain, performant, and scale cleanly.',
       icon: <Layers className="w-6 h-6 text-purple-400" />,
-      tags: ['JSON', 'gRPC', 'Protobuf', 'OpenAPI'],
+      tags: ['Golang', 'Kotlin', 'gRPC', 'APIs'],
     },
     {
-      title: 'Observability & Monitoring',
-      description: 'Integrating structured logs, distributed tracing, and metrics to ensure that production issues can be identified and diagnosed before they impact customers.',
+      title: 'Observability & Reliability',
+      description: 'Integrating structured logging, distributed tracing, and real-time metrics. I make sure that software systems are diagnosable in production, allowing issues to be debugged before they impact users.',
       icon: <Activity className="w-6 h-6 text-purple-400" />,
       tags: ['OpenTelemetry', 'Grafana', 'Prometheus', 'Tempo'],
     },
     {
       title: 'Cloud Native Systems',
-      description: 'Containerizing and deploying microservices to Docker and Kubernetes, configuring infrastructure with safety-focused and repeatable patterns.',
+      description: 'Containerizing applications and managing deployments in Docker and Kubernetes. I build secure, repeatable, and containerized deployment paths.',
       icon: <Cloud className="w-6 h-6 text-purple-400" />,
       tags: ['Docker', 'Kubernetes', 'CI/CD', 'Linux'],
     },
     {
-      title: 'AI-assisted Productivity Tools',
-      description: 'Customizing CLI scripts, code helpers, and agent interfaces using large language models to automate routine tasks and enhance local workflows.',
+      title: 'AI-assisted Tooling',
+      description: 'Building custom CLI tools, automations, and LLM integrations to reduce repetitive manual work and enhance local development workflows.',
       icon: <BrainCircuit className="w-6 h-6 text-purple-400" />,
-      tags: ['LLMs', 'Prompting', 'CLI', 'Automation'],
+      tags: ['LLMs', 'Automation', 'CLI Scripts', 'Python'],
     },
     {
-      title: 'Security Learning Path',
-      description: 'Studying common vulnerabilities, identity protocols (OAuth2/OIDC), secure configuration practices, and defense-in-depth engineering principles.',
+      title: 'Security-Oriented Thinking',
+      description: 'Adhering to secure coding practices, implementing secure identity protocols (OAuth2/OIDC), and analyzing system boundaries to protect user data.',
       icon: <ShieldCheck className="w-6 h-6 text-purple-400" />,
-      tags: ['OAuth2', 'OIDC', 'OWASP', 'TLS'],
+      tags: ['OAuth2', 'OIDC', 'Security Best Practices'],
     },
     {
-      title: 'Personal Knowledge Systems',
-      description: 'Modeling technical notes, system references, and documentation using digital gardens, linking concepts to build a searchable knowledge repository.',
+      title: 'Product & System Design',
+      description: 'Bridging the gap between code and user experience. I design systems from the user\'s perspective, focusing on reducing complexity and building features that solve real needs.',
       icon: <Compass className="w-6 h-6 text-purple-400" />,
-      tags: ['Markdown', 'Obsidian', 'Second Brain', 'Docs'],
+      tags: ['System Thinking', 'UX-Focused', 'Prototyping', 'Product Development'],
     },
   ];
 

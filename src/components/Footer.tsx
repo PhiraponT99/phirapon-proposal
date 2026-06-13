@@ -50,14 +50,17 @@ export const Footer: React.FC = () => {
 
         {/* Text */}
         <div className="text-center md:text-left text-xs text-slate-500 font-light tracking-wide max-w-md">
-          © {new Date().getFullYear()} Izuna LAB. All rights reserved. A personal research space dedicated to backend engineering, observability, and distributed systems.
+          © {new Date().getFullYear()} Phirapon Proposal · Built through Izuna LAB
+          <div className="mt-1 text-slate-600 font-mono tracking-widest uppercase text-[10px]">
+            Research. Build. Experiment. Learn.
+          </div>
         </div>
 
         {/* Action icons & scroll top */}
         <div className="flex items-center gap-6">
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/PhiraponT99"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
@@ -66,7 +69,7 @@ export const Footer: React.FC = () => {
               <GithubIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition-colors"
@@ -75,7 +78,7 @@ export const Footer: React.FC = () => {
               <LinkedinIcon className="w-5 h-5" />
             </a>
             <a
-              href="mailto:contact@izunalab.com"
+              href="mailto:phirapon.m@outlook.com"
               className="text-slate-400 hover:text-white transition-colors"
               aria-label="Email Contact"
             >
